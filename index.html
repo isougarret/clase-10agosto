@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>indicadores economics</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand|Zilla+Slab+Highlight" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-12 col-xs-12 border-bot">
+			<h1 class="rainbow-text">💰💸 indicadores económicos 💸💰</h1>
+		</div>
+		
+
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-6 col-xs-12 pad-bt">
+		<h2>💸valores hoy💸</h2>
+		<table class="table table-stripped">
+			<tr>
+				<td class="neg rainbow-text">indicador</td>
+				<td class="neg rainbow-text">$CLP</td>
+			</tr>
+
+			<tr>
+				<td>dolar</td>
+				<td id="dolar"></td>
+			</tr>
+
+			<tr>
+				<td>euro</td>
+				<td id="euro"></td>
+			</tr>
+
+			<tr>
+				<td>uf</td>
+				<td id="uf"></td>
+			</tr>
+
+			<tr>
+				<td>utm</td>
+				<td id="utm"></td>
+			</tr>
+		</table>
+		</div>
+
+		<div class="col-md-6 col-xs-12 pad-bt border-left">
+		<h2>💸conversión clp/eu & clp/usd💸</h2>
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label class="sr-only" for="exampleInputAmount">Monto (in chilean peso)</label>
+		    <div class="input-group">
+		      <div class="input-group-addon rainbow-back">$</div>
+		      <input type="text" class="form-control" id="peso-cl" placeholder="Monto en peso chileno">
+		    </div>
+		  </div>
+		  <button type="submit" class="btn rainbow-back white text-uppercase" id="cl-button">Convertir</button>
+		</form>
+		<br>
+		<table class="table table-stripped" hidden="true" id="escondido-1">
+
+			<tr>
+				<td class="neg rainbow-text">moneda</td>
+				<td class="neg rainbow-text"></td>
+			</tr>
+
+			<tr>
+				<td>euro</td>
+				<td id="conv-euro"></td>
+			</tr>
+			<tr>
+				<td>dolar</td>
+				<td id="conv-dolar"></td>
+			</tr>
+		</table>
+
+		<h2>💸conversión usd/clp💸</h2>
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label class="sr-only" for="exampleInputAmount">Monto (in dollars)</label>
+		    <div class="input-group">
+		      <div class="input-group-addon rainbow-back">$</div>
+		      <input type="text" class="form-control" id="dolar-us" placeholder="Monto en dolar americano">
+		    </div>
+		  </div>
+		  <button type="submit" class="btn rainbow-back white text-uppercase" id="us-button">Convertir</button>
+		</form>
+		<br>
+		<table class="table table-stripped" hidden="true" id='escondido-2'>
+
+			<tr>
+				<td class="neg rainbow-text">moneda</td>
+				<td class="neg rainbow-text">$CLP</td>
+			</tr>
+
+			<tr>
+				<td>pesos chilenos</td>
+				<td id="conv-peso"></td>
+			</tr>
+		</table>
+			
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
